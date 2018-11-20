@@ -1,0 +1,96 @@
+---
+layout: post
+title:  "Frågor Examination 1"
+date:   2018-11-12 07:59:59 -0600
+categories: jekyll update
+comments: true
+---
+<html>
+<head>
+<link rel="author" href="../humans.txt/" />
+<meta charset="UTF-8">
+<meta property="og:title" content="Examination1" />
+<meta property="og:url" content="http://localhost:4000">
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Här hittar du mina svar till examination1 frågorna!" />
+</head>
+<body>
+    <div id="fraga1">
+        <h4>Fråga 1: What did you think of pre-compiling your CSS?</h4>
+            <ul>
+                <li>Compare to regular CSS</li>
+                <li>Which techniques did you use?</li>
+                <li>Pros and cons?</li>
+            </ul>
+        <h4>svar: </h4>
+        <p>Jämnfört med vanlig css var det väldigt skönt att få en grund att arbeta med.
+            Att endast modifiera och förändra en redan befintlig CSS-kod var mycket lättare
+        mot tålamodet. Jag använde mig utav sass när jag skrev min css-kod. En stor fördel med att kompiliera css är
+    att det tillkommer fler funktioner som till exempel variablar i din scss kod. En nackdel som jag uppfattade var
+att  för nybörjare på CSS så kan det bli lite komplext när man vill göra små specifika förändringar. Ett exempel var Att
+få bort bordern från headern och footern. Problemet jag hade var att när jag skrev min css i minima.scss så dök den upp
+högst upp i main.css vilket senare ledde till att min kod blev överskriven längre ner i main.css. Jag löste detta temporärt genom
+att använda mig utav !important vilket av många anses vara bad practice. </p>
+    </div>
+    <div id="fraga2">
+        <h4>Fråga 2: What do you think about static site generators? What type of projects are they suitable for?</h4>
+        <p>Static site generators eller kort: SSG's går att använda vid nästan alla typer av projekt. Allifrån enkla skoluppgifter
+            till stora viktiga hemsidor som till exempel Barack Obamas presidentkampanj.
+            Jag har funnit jekyll att vara otroligt skönt att arbeta med. Allting går mycket snabbare. Dessutom sitter man slita med
+            CSS3 vilket för många är en mardröm inkluderat mig. Dock slipper man inte CSS helt men man får en grund att modifiera och
+            ändra.
+        </p>
+    </div>
+    <div id="fraga3">
+        <h4>Fråga 3: What is robots.txt and how have you configure it for your site?</h4>
+        <p>robots.txt är en textfil som ska ligga i roten av din domän. Den instruerar sökmotorer hur de ska spindla.
+           Har du ingen robots.txt på din hemsida så får alla sökmotorer fritt fram att komma åt och indexera allt innehåll på din hemsida.
+           robots.txt fungerar så att när en sökmotor når din hemsida så byts start-sidan (oftast index.html) ut till robots.txt
+           till exempel https://localhost:4000/index.html/ upptäcks först som https://localhost:4000/robots.txt/. Där får
+           sökmotorn instruktioner angående vilken information och sidor de får ta del av.
+        </p>
+    </div>
+    <div id="fraga4">
+        <h4>Fråga 4: What is humans.txt and how have you configure it for your site?</h4>
+        <p>humans.txt är ett text dokument där du skriver ner diverse information angående vem/vilka
+        som varit med och skapat hemsidan. Det enda man måste göra är att skapa ett humans.txt dokument och lägga det
+        vid roten av din hemsida (src). Du kan sedan använda dig utav knappar eller bilder för att länka till .txt dokumentet.
+        </p>
+    </div>
+    <div id="fraga5">
+        <h4>fråga 5: How did you implements comments to blog posts?</h4>
+        <p>Jag använde mig utav disqus. Disqus är en organisation som ger ut färdigkodade kommentarsfält.
+            För implementera disqus till min hemsida la jag till den färdiga koden längst ner i mina blogposter.
+            Jag ändrade även i YMAL-fältet och la dit "comments: true".
+        </p>
+    </div>
+    <div id="fraga6">
+        <h4>Fråga 6: What is Open Graph and how do you make use of it?</h4>
+        <p>Open graph är meta-taggar som bestämmer vad som ska visas när du länkar din hemsida.
+         Med OG (open graph) kan du välja att visa till exempel en bild brevid din länk och även
+         lite information kring hemsidan (og:image, og:description.)
+        </p>
+    </div>
+    <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://http-localhost-4000-bhqmitd299.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<button type="button" class="humantext"><a href="http://localhost:4000/humans.txt">Humans!</a></button>
+</body>                     
+</html>

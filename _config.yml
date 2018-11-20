@@ -16,15 +16,13 @@
 title: Jesper Eriksson!
 email: je223gs@student.lnu.se
 description: >- # this means to ignore newlines until "baseurl:"
- Hej jag heter Jesper Eriksson, 20 år gammal och pluggar UDM.
- Tidigare har jag pluggat marknadsföring och en sommarkurs i Python.
- Drömmen med programmering är att en dag få jobba med AI utveckling.
- På fritiden så tränar jag mycket, spelar fotboll och innebandy och
- lagar mat. // Jesper
+ Jesper Eriksson
+ 1DV021
+ UDM 2018
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://localhost:4000/" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username:
+github_username:
 
 # Build settings
 markdown: kramdown

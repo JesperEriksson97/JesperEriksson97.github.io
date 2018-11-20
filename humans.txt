@@ -1,0 +1,18 @@
+
+/* TEAM */
+                            
+Author: Jesper Eriksson.
+                            
+Site: je223gs@student.lnu.se
+                             
+Location: Stockholm, Sweden.
+
+
+                            
+/* SITE */
+                          
+Last update: 2018/11/19 
+                            
+Standards: HTML5, CSS3
+                            
+Software: Visual Studio Code, Windows
